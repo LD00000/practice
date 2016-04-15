@@ -65,6 +65,20 @@ public class ListLoopTest {
 	}
 	
 	/**
+	 * foreach 遍历 list
+	 */
+	public static void accessListByForeach(List list) {
+		long startTime = System.currentTimeMillis();
+		
+		for (Object object : list) {
+			
+		}
+		
+		long endTime = System.currentTimeMillis();
+		System.out.println("foreach遍历时间：" + (endTime - startTime));
+	}
+	
+	/**
 	 * 迭代器遍历
 	 */
 	public static void accessListByIterator(List list) {
@@ -79,18 +93,20 @@ public class ListLoopTest {
 	}
 	
 	public static void main(String[] args) {
-		ArrayList<Integer> aList = (ArrayList<Integer>) initList(new ArrayList<>(), 2000000);
-		LinkedList<Integer> lList = (LinkedList<Integer>) initList(new LinkedList<>(), 50000);
+		ArrayList<Integer> aList = (ArrayList<Integer>) initList(new ArrayList<>(), 50000000);
+		LinkedList<Integer> lList = (LinkedList<Integer>) initList(new LinkedList<>(), 80000);
 		
 		accessList(aList);
 		accessList(lList);
 		
 		System.out.println("ArrayList");
 		accessListByLoop(aList);
+		accessListByForeach(aList);
 		accessListByIterator(aList);
 		
 		System.out.println("LinkedList");
 		accessListByLoop(lList);
+		accessListByForeach(lList);
 		accessListByIterator(lList);
 	}
 
