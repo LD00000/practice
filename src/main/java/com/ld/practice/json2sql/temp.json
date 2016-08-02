@@ -1,0 +1,7 @@
+{
+  "tableName": "ld_test",
+  "columnMappings": [
+    {"from": "attrStr", "to": "attr_str", "type": "string"},
+    {"from": "attrDouble", "to": "attr_double", "type": "double"}
+  ]
+}
