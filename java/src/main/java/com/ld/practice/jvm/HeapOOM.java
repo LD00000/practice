@@ -13,15 +13,15 @@ import java.util.List;
  * Heap dump file created [27982863 bytes in 0.178 secs]
  */
 public class HeapOOM {
-	
-	static class OOMObject{
-	}
-	
-	public static void main(String[] args) {
-		List<OOMObject> list = new ArrayList<>();
-		while (true) {
-			list.add(new OOMObject());
-		}
-	}
-	
+
+    static class OOMObject{
+    }
+
+    public static void main(String[] args) {
+        List<OOMObject> list = new ArrayList<>();
+        while (true) {
+            list.add(new OOMObject());
+        }
+    }
+
 }

@@ -7,7 +7,7 @@ public class Composite extends Component {
     private ArrayList<Component> childen = new ArrayList<Component>();
 
     public Composite() {
-    	super();
+        super();
     }
 
     public Composite(String name) {

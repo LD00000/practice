@@ -6,7 +6,7 @@ package com.ld.pattern.composite.tmcompostie;
 public class Leaf extends Component {
 
     public Leaf() {
-    	super();
+        super();
     }
 
     public Leaf(String name) {

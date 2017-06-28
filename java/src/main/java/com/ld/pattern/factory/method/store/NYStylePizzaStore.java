@@ -7,20 +7,20 @@ import com.ld.pattern.factory.method.pizza.Pizza;
 
 public class NYStylePizzaStore extends PizzaStore {
 
-	@Override
-	protected Pizza createPizza(String type) {
-		Pizza pizza;
-		if ("cheese".equals(type)) {
-			pizza = new NYStyleCheesePizza();
-		} else if ("clam".equals(type)) {
-			pizza = new NYStyleClamPizza();
-		} else if ("pepperoni".equals(type)) {
-			pizza = new NYStylePepperoniPizza();
-		} else {
-			pizza = null;
-		}
-		
-		return pizza;
-	}
+    @Override
+    protected Pizza createPizza(String type) {
+        Pizza pizza;
+        if ("cheese".equals(type)) {
+            pizza = new NYStyleCheesePizza();
+        } else if ("clam".equals(type)) {
+            pizza = new NYStyleClamPizza();
+        } else if ("pepperoni".equals(type)) {
+            pizza = new NYStylePepperoniPizza();
+        } else {
+            pizza = null;
+        }
+
+        return pizza;
+    }
 
 }
